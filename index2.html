@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>New York Times</title>
 </head>
 <body>
+    <div id="banner"><p id="nytBanner">New York Times Search</p></div>
+    <div id="searchparameters">
+    <form action="/action_page.php">
+
+        <div id="searchTerm">
+            <p>Search Term:</p>
+            <input type="field" id="searchText">
+        </div>
+        <div id="records">
+            <p>Number of Records to Retrieve</p>
+            <input type="field">
+        </div>
+        <div id="year">
+            <p>Start Year (Optional)</p>
+            <input type="year">
+        </div>
+        <div id="endYear">
+            <p>End Year(Optional)</p>
+            <input type="field">
+        </div>
+        <div id="search">
+            <button type="submit" id="search-button">
+                Search
+            </button>
+        </div>
+        <div id="clearResults">
+            <button>
+                Clear Results
+            </button>
+        </div>
+
+    </form> 
+    </div>
+
+    <div id="topArticles">
+    <p>Top Articles</p>
+    </div>
+    <div id="blankSpace">
+    </div>
+    <hr>
+    <footer>
+    <p>Made with lots of love</p>
+    </footer>
+    
+
     
 </body>
-<script src="app.js"></script>
+<script src=app.js></script>
 </html>
